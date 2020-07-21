@@ -1,0 +1,44 @@
+
+<resources>
+    <string name="app_name">IT PIZZA Delivery!</string>
+    <string name="title_placeholder">Title</string>
+    <string name="news_placeholder">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+    <string name="subtitle_detail_text">โปรโมชั่นนี้มีตลอดเดือน สิ้นสุดโปรโมชั่น ภายใน 30 เมษายนนี้</string>
+    <string name="order">order</string>
+    <string name="address_delivery">ADDRESS Delivery</string>
+    <string name="title_activity_order_details">orderDetails</string>
+    <string name="same_day_messenger_service">ชำระเงินปลายทาง
+        service</string>
+    <string name="next_day_ground_delivery">พร้อมเพย์</string>
+    <string name="pick_up">ผ่านแอปไอทีพิซซ่า</string>
+    <string-array name="sports_titles">
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>โปรโมชั่นซื้อพิซซ่า 1 ถาด แถม 1 ถาดฟรี</item>
+        <item>ส่งพิซซ่าฟรีตลอดเดือน</item>
+        <item>มีหน้าให้เลือกซื้อหลากหลาย</item>
+    </string-array>
+
+
+    <array name="sports_images">
+        <item>@drawable/promotion1</item>
+        <item>@drawable/promotion2</item>
+        <item>@drawable/promotion3</item>
+
+    </array>
+    <string-array name="labels_array">
+        <item>-</item>
+        <item>แย่</item>
+        <item>พอใช้</item>
+        <item>ดี</item>
+        <item>เยี่ยม</item>
+    </string-array>
+    <string name="datepicker">datePicker</string>
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/orderlistTextview"
+        android:layout_width="425dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Ordered List"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/orderDetailstextView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_horizontal"
+            android:hint="Please choose items from menu."
+            android:textColor="#f79625bc"
+            android:textSize="20sp"
+
+            />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="140dp">
+
+        <TextView
+            android:id="@+id/showprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg"
+            android:hint="Cost"
+            android:padding="5dp"
+            android:textColor="#ea7b67"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="go_to_address"
+                android:text="DELIVERY"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/listen"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="confirm"
+                android:text="Listen"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/call"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_toRightOf="@id/listen"
+                android:layout_weight="1"
+                android:background="#3a8fc1"
+                android:onClick="call"
+                android:text="Call"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sms"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="sms"
+                android:text="SMS"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

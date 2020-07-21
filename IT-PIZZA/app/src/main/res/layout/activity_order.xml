@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/bg1"/>
+
+    <TextView
+        android:id="@+id/menuTv"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/myfont"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="40sp" />
+
+    <ScrollView
+
+        android:id="@+id/myScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/tomyumkung_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/p7"
+                        android:src="@drawable/p6" />
+
+                    <TextView
+                        android:id="@+id/tomyumkung_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/tomyumkung_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Tom Yum Kung"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/tomyumkung_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tomyumkung_textView"
+                        android:layout_toRightOf="@id/tomyumkung_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="319 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/tomyumkung_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/tomyumkung_button"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toLeftOf="@id/tomyumkung_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/tomyumkung_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/dark_black"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/chicken_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/p1" />
+
+                    <TextView
+                        android:id="@+id/chicken_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/chicken_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Chicken Trio"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/chicken_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/chicken_textView"
+                        android:layout_toRightOf="@id/chicken_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="279 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/chicken_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/chicken_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/chicken_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/chicken_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Shrimp_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/p3" />
+
+                    <TextView
+                        android:id="@+id/Shrimp_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/Shrimp_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Shrimp Cocktail"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/Shrim_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Shrimp_textView"
+                        android:layout_toRightOf="@id/Shrimp_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="319 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/Shrimp_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/Shrimp_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/Shrimp_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/Shrimp_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/dark_black"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Hawaiian_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/p4" />
+
+                    <TextView
+                        android:id="@+id/Hawaiian_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/Hawaiian_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Hawaiian"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/Hawaiian_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Hawaiian_textView"
+                        android:layout_toRightOf="@id/Hawaiian_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="279 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/Hawaiian_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/Hawaiian_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/Hawaiian_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/Hawaiian_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/dark_black"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Veggie_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/p5" />
+
+                    <TextView
+                        android:id="@+id/Veggie_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/Veggie_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Veggie"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/Veggie_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Veggie_textView"
+                        android:layout_toRightOf="@id/Veggie_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="319 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/Veggie_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/Veggie_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/Veggie_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/Veggie_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/dark_black"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Double_Pepperoni_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/p6" />
+
+                    <TextView
+                        android:id="@+id/Double_Pepperoni_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/Double_Pepperoni_photo"
+                        android:fontFamily="@font/french"
+                        android:text="Double Pepperoni"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/Double_Pepperoni_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Double_Pepperoni_textView"
+                        android:layout_toRightOf="@id/Double_Pepperoni_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="279 Baht"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/Double_Pepperoni_button_rm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBaseline="@+id/Double_Pepperoni_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/Double_Pepperoni_button"
+                        android:background="@drawable/dlt"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/Double_Pepperoni_button"
+                        android:layout_width="60dp"
+                        android:layout_height="53dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/supermarket"
+                        android:fadeScrollbars="false"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="@color/dark_black"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/Meat_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/p2" />
+
+                <TextView
+                    android:id="@+id/Meat_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/Meat_photo"
+                    android:fontFamily="@font/french"
+                    android:text="Meat Duluxe"
+                    android:textColor="@color/dark_black"
+                    android:textSize="25sp" />
+
+                <TextView
+
+                    android:id="@+id/Meat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Meat_textView"
+                    android:layout_toRightOf="@id/Meat_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="319 Baht"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/Meat_button_rm"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBaseline="@+id/Meat_button"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_toLeftOf="@id/Meat_button"
+                    android:background="@drawable/dlt"
+                    android:gravity="center"
+                    android:onClick="rmv_from_list"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/Meat_button"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/supermarket"
+                    android:gravity="center"
+                    android:onClick="add_to_list"
+                    android:textColor="@color/dark_black"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:onClick="place_order"
+        android:text="Place Order"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>

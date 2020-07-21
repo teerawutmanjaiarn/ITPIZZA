@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".Confirmorder">
+
+    <Button
+        android:id="@+id/sentorder"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="go_lastpage"
+        android:text="SENT ORDER"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_message"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="420dp"
+        android:layout_marginLeft="420dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="การชำระเงิน"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+
+        <TextView
+            android:id="@+id/showprice2"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg"
+            android:hint="Cost"
+            android:padding="5dp"
+            android:textColor="#ea7b67"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="420dp"
+        android:layout_marginLeft="420dp"
+        android:gravity="center"
+        android:text="วันที่"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="420dp"
+        android:layout_marginLeft="420dp"
+        android:gravity="center"
+        android:text="เบอร์"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="403dp"
+
+
+        android:layout_height="199dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_header">
+
+        <TextView
+            android:id="@+id/orderDetailstextView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_horizontal"
+            android:hint="Show order "
+            android:textColor="@android:color/holo_purple"
+            android:textSize="16sp"
+
+            />
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="824dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Confirm Payment"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_message"
+        android:layout_width="234dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+    <TextView
+        android:id="@+id/address_message"
+        android:layout_width="234dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name_message" />
+
+    <TextView
+        android:id="@+id/phone_message"
+        android:layout_width="234dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/address_message" />
+
+    <TextView
+        android:id="@+id/date_message"
+        android:layout_width="234dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/phone_message" />
+
+    <TextView
+        android:id="@+id/payment_message"
+        android:layout_width="234dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/payment"
+        app:layout_constraintTop_toBottomOf="@+id/date_message" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="ชื่อ"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="420dp"
+        android:layout_marginLeft="420dp"
+        android:gravity="center"
+        android:text="ที่อยู่"
+        android:textColor="@color/dark_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+</android.support.constraint.ConstraintLayout>
